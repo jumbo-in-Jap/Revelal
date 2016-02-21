@@ -4,7 +4,28 @@
 
 module:testrunner
 
-GET     /                                       App.Index
+# top
+GET     /                                       Top.Index
+
+# user mypage
+GET     /user                                   User.Index
+
+# movie list
+GET     /list                                   List.Index
+
+# Movie show page
+GET     /movie                                  Movie.Index
+
+
+## api
+# list
+GET     /list/:id                               App.Index
+
+
+# user action
+POST    /login                                  App.Index
+GET     /logout                                 App.Index
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
